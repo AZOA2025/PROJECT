@@ -809,3 +809,134 @@ nav {
     -webkit-backdrop-filter: blur(24px) brightness(1);
   }
 }
+
+@media (min-width: 320px) and (max-width: 600px), (min-width: 601px) and (max-width: 1100px) {
+
+  .hero {
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .hero-general {
+    flex-direction: column;
+  }
+
+  .hero-body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-body h1 {
+    line-height: 1.2;
+    letter-spacing: -0.07em;
+  }
+
+  .hero-body p {
+    width: 100%;    
+  }
+
+  .hero-links {
+    display: flex;
+    flex-wrap: wrap;   
+    gap: 12px;
+  }
+
+  .hero-visual {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 30px auto 0;       
+    overflow: hidden;      
+  }
+
+  .hero-visual .woman {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center top; 
+    transform: translateX(4%);  
+  }
+
+  .hero-visual .transaction {
+    display: none;      
+  }
+}
+
+/* Tablets only */
+@media (min-width: 601px) and (max-width: 1100px) {
+
+  .hero-body {
+    padding: 60px 40px 0;
+  }
+
+  .hero-body h1 {
+    font-size: 64px;
+  }
+
+  .hero-links a,
+  .download {
+    height: auto;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .hero-visual {
+    width: 80%;
+    height: 52vw;
+  }
+}
+
+/* Phones only */
+@media (min-width: 320px) and (max-width: 600px) {
+
+  .hero-body {
+    padding: 44px 24px 0;
+  }
+
+  .hero-body h1 {
+    font-size: 42px;
+  }
+
+  .hero-body p {
+    font-size: 16px;
+  }
+
+  .hero-links a,
+  .download {
+    height: auto;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .hero-icon {
+    width: 16px;                  /* smaller icons for smaller buttons */
+    height: 16px;
+  }
+
+  .play-icon::before {
+    top: -3px;
+    height: 22px;                 /* shorter divider line */
+  }
+
+  .qr-card {
+    display: none;                /* no hover on touch */
+  }
+
+  .fade {
+    width: 60px;                  /* the flag fades were 186px, too wide here */
+  }
+
+  .flags-track img {
+    height: 30px;
+  }
+
+  .hero-visual {
+    width: 86%;
+    height: 70vw;
+  }
+}
