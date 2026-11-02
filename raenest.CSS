@@ -545,6 +545,14 @@ nav {
   position: relative;
   overflow: hidden;
   width: 90%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 15%,
+    #000 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to right, transparent 0%, #000 15%, #000 85%, transparent 100%);
 }
 
 .flag-track {
@@ -555,6 +563,8 @@ nav {
 
 .flag-track img {
   flex-shrink: 0;
+  opacity: 1;
+  filter: none;
 }
 
 @keyframes scroll-flags {
@@ -572,6 +582,7 @@ nav {
   height: 100%;
   pointer-events: none;
   z-index: 2;
+  display: none;
 }
 
 .fade-left {
