@@ -598,7 +598,7 @@ nav {
   font-weight: 400;
   color: white;
   margin-bottom: 0;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .hero-body p {
@@ -777,7 +777,19 @@ nav {
     position: relative;
     overflow: hidden;
     height: auto;
-    min-height: 64vw;
+    min-height: 780px;
+  }
+
+  .hero-body {
+    padding-top: 40px;
+  }
+
+  .hero-links {
+    margin-top: 50px;
+  }
+
+  .flags {
+    padding-top: 50px;
   }
 
   .hero-visual {
@@ -791,7 +803,7 @@ nav {
 
   .hero-visual .woman {
     position: absolute;
-    right: -7.7vw;
+    right: -85px;
     bottom: 0;
     /* left: 0; */
     width: auto;
@@ -803,7 +815,7 @@ nav {
   .hero-visual .transaction {
     position: absolute;
     left: -30%;
-    bottom: 8%;
+    bottom: 5%;
     width: 25vw;
     z-index: 2;
 
@@ -833,6 +845,7 @@ nav {
   .hero-body h1 {
     line-height: 1.2;
     letter-spacing: -0.07em;
+    margin-top: 16px;
   }
 
   .hero-body p {
@@ -862,6 +875,7 @@ nav {
 
   .hero-visual .woman {
     position: static;
+    right: -75px;
     display: block;
     width: 112%;
     margin-left: -6%;
