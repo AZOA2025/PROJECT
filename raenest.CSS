@@ -326,7 +326,7 @@ nav {
   }
 
   .nav-left > img {
-    width: 70px;
+    width: 88px;
     flex-shrink: 0;
   }
 
@@ -771,6 +771,7 @@ nav {
   background: rgba(0, 0, 0, 0.35);
 }
 
+/* Laptops and Large screens */
 @media (min-width: 1101px) and (max-width: 3840px) {
   .hero {
     position: relative;
@@ -810,8 +811,8 @@ nav {
   }
 }
 
+/* Tablets and Phone */
 @media (min-width: 320px) and (max-width: 600px), (min-width: 601px) and (max-width: 1100px) {
-
   .hero {
     height: auto;
     min-height: 0;
@@ -833,12 +834,12 @@ nav {
   }
 
   .hero-body p {
-    width: 100%;    
+    width: 100%;
   }
 
   .hero-links {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -848,34 +849,44 @@ nav {
     right: auto;
     bottom: auto;
     left: auto;
-    margin: 30px auto 0;       
-    overflow: hidden;      
+    height: auto;
+    margin: 30px auto 0;
+    overflow: hidden;
+  }
+
+  .hero-visual picture {
+    display: block;
   }
 
   .hero-visual .woman {
     position: static;
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center top; 
-    transform: translateX(4%);  
+    width: 112%;
+    margin-left: -6%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    transform: none;
   }
 
   .hero-visual .transaction {
-    display: none;      
+    display: none;
   }
 }
 
 /* Tablets only */
 @media (min-width: 601px) and (max-width: 1100px) {
-
   .hero-body {
     padding: 60px 40px 0;
   }
 
   .hero-body h1 {
-    font-size: 64px;
+    font-size: 70px;
+    width: 80%;
+  }
+
+  .hero-body p {
+    width: 45%;
   }
 
   .hero-links a,
@@ -887,13 +898,11 @@ nav {
 
   .hero-visual {
     width: 80%;
-    height: 52vw;
   }
 }
 
 /* Phones only */
 @media (min-width: 320px) and (max-width: 600px) {
-
   .hero-body {
     padding: 44px 24px 0;
   }
@@ -904,6 +913,7 @@ nav {
 
   .hero-body p {
     font-size: 16px;
+    width: 83%;
   }
 
   .hero-links a,
@@ -914,29 +924,28 @@ nav {
   }
 
   .hero-icon {
-    width: 16px;                  /* smaller icons for smaller buttons */
+    width: 16px;
     height: 16px;
   }
 
   .play-icon::before {
     top: -3px;
-    height: 22px;                 /* shorter divider line */
+    height: 22px;
   }
 
   .qr-card {
-    display: none;                /* no hover on touch */
+    display: none;
   }
 
   .fade {
-    width: 60px;                  /* the flag fades were 186px, too wide here */
+    width: 60px;
   }
 
-  .flags-track img {
+  .flag-track img {
     height: 30px;
   }
 
   .hero-visual {
     width: 86%;
-    height: 70vw;
   }
 }
