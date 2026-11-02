@@ -776,7 +776,8 @@ nav {
   .hero {
     position: relative;
     overflow: hidden;
-    height: 140vh;
+    height: auto;
+    min-height: 64vw;
   }
 
   .hero-visual {
@@ -785,11 +786,12 @@ nav {
     bottom: 0;
     height: 100%;
     width: 45%;
+    pointer-events: none;
   }
 
   .hero-visual .woman {
     position: absolute;
-    right: -19vh;
+    right: -7.7vw;
     bottom: 0;
     /* left: 0; */
     width: auto;
@@ -889,6 +891,27 @@ nav {
     width: 45%;
   }
 
+  .hero-body .qr-card p {
+    width: 100%;
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+  }
+
+  .qr-card img {
+    width: 100%;
+  }
+
+  .hero-body .qr-card p {
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: -0.3px;
+    margin: 8px;
+    text-align: center;
+  }
+
   .hero-links a,
   .download {
     height: auto;
@@ -923,6 +946,30 @@ nav {
     font-size: 14px;
   }
 
+  .download-wrap:focus {
+    outline: none;
+  }
+
+  .qr-card {
+    width: auto;
+    max-width: 170px;
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .qr-card img {
+    width: 100%;
+  }
+
+  .hero-body .qr-card p {
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -0.5px;
+    margin: 8px;
+    text-align: center;
+  }
+
   .hero-icon {
     width: 16px;
     height: 16px;
@@ -931,10 +978,6 @@ nav {
   .play-icon::before {
     top: -3px;
     height: 22px;
-  }
-
-  .qr-card {
-    display: none;
   }
 
   .fade {
