@@ -1612,7 +1612,6 @@ html:has(.video-modal:target) {
   }
 
   .alert-image,
-  .fast-image,
   .occasion-transaction {
     right: auto;
     left: 50%;
@@ -1620,8 +1619,8 @@ html:has(.video-modal:target) {
     transform: translateX(-50%);
   }
   .domestic {
-     backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 }
 
@@ -1656,14 +1655,30 @@ html:has(.video-modal:target) {
     left: 43%;
     top: 35%;
   }
+
+  .fast-image {
+    left: 19%;
+    top: 54%;
+    width: 45vw;
+    transform: none;
+  }
 }
 
 /* Phones */
 @media (min-width: 320px) and (max-width: 600px) {
+   .alert-image {
+    left: 67%;
+    top: 73%;
+    width: 60%;
+    border-radius: 10px;
+  }
+
   .fast-image {
-    left: 12%;
-    top: 55%;
+    left: 13%;
+    top: 57%;
     width: 50vw;
+    border-radius: 10px;
+    transform: none;
   }
 
   .occasion-transaction {
@@ -1687,17 +1702,10 @@ html:has(.video-modal:target) {
     line-height: 21px;
   }
 
-  .alert-image {
-    left: 67%;
-    top: 73%;
-    width: 60%;
-    border-radius: 10px;
-  }
 
   .domestic {
     width: 35vw;
     left: 8%;
     top: 68%;
   }
-  
 }
