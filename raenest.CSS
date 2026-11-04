@@ -1773,6 +1773,7 @@ html:has(.video-modal:target) {
   gap: 24px;
   overflow-x: hidden;
   padding-left: 50px;
+  padding-right: 30px;
   scroll-padding-left: 50px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -1824,7 +1825,6 @@ html:has(.video-modal:target) {
 
 .everyone-card .online {
   width: 30%;
-  flex-wrap: wrap;
 }
 
 /* Tablets */
