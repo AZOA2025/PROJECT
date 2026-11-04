@@ -1963,6 +1963,6 @@ html:has(.video-modal:target) {
   }
 
   .everyone-card .online {
-    width: 30%;
+    width: 50%;
   }
 }
