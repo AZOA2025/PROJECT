@@ -1453,6 +1453,7 @@ html:has(.video-modal:target) {
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100svh;
   color: white;
   overflow: hidden;
 }
@@ -1815,4 +1816,27 @@ html:has(.video-modal:target) {
   font-size: 28px;
   line-height: 45px;
   letter-spacing: -1.5px;
+}
+
+@media (min-width: 320px) and (max-width: 600px), (min-width: 601px) and (max-width: 1100px) {
+  .everyone-section {
+    padding-left: 20px;
+  }
+
+  .everyone-top {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-right: 20px;
+  }
+
+  .everyone-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
