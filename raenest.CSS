@@ -1975,7 +1975,7 @@ html:has(.video-modal:target) {
   justify-content: center;
   text-align: center;
   height: 37vw;
-  margin: 0 4vw;
+  margin: 100px 4vw 0;
   color: #fff;
 }
 
@@ -2026,7 +2026,7 @@ html:has(.video-modal:target) {
 @media (min-width: 601px) and (max-width: 1100px) {
   .business {
     height: auto;
-    margin: 0 40px;
+    margin: 70px 40px 0;
     padding: 95px 40px;
   }
 
@@ -2060,7 +2060,7 @@ html:has(.video-modal:target) {
 @media (min-width: 320px) and (max-width: 600px) {
   .business {
     height: auto;
-    margin: 0 24px;
+    margin: 60px 24px 0;
     padding: 70px 30px;
   }
 
@@ -2087,5 +2087,183 @@ html:has(.video-modal:target) {
     font-size: 12px;
     letter-spacing: -0.36px;
     border-radius: 10px;
+  }
+}
+
+.money {
+  display: flex;
+  justify-content: space-between;
+  padding: 7vw 8.4vw 0 4vw;
+  background: #f7f7ff;
+  margin: 70px 0;
+  height: 1500px;
+  overflow: hidden;
+}
+
+.money-text {
+  width: 47vw;
+  margin-top: 10vw;
+}
+
+.money h2 {
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: -4.76px;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.money p {
+  width: 35vw;
+  margin: 0;
+  font-size: 1.55vw;
+  line-height: 2.5vw;
+  letter-spacing: -0.07vw;
+  color: #1c1c1c;
+}
+
+.money-visual {
+  position: relative;
+  width: 38.5vw;
+}
+
+.money-phone {
+  display: block;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.money-card {
+  position: absolute;
+  width: 35%;
+  border-radius: 15px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.money-card-top {
+  left: 64.9%;
+  top: 13vw;
+}
+
+.money-card-send {
+  left: 2vw;
+  top: 31.9vw;
+}
+
+.money-podium {
+  display: block;
+  width: 100%;
+  margin-top: 1.4vw;
+}
+/* Tablets*/
+@media (min-width: 601px) and (max-width: 1100px) {
+  .money {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 50px 0 40px;
+  }
+
+  .money-text {
+    width: 46%;
+    margin-top: 0;
+  }
+
+  .money h2 {
+    margin: 0 0 20px;
+    font-size: 44px;
+    line-height: 46px;
+    letter-spacing: -3px;
+  }
+
+  .money p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: -0.5px;
+  }
+
+  .money-visual {
+    width: 48%;
+    margin-top: 0;
+  }
+
+  .money-phone {
+    width: 170%;
+    margin: 0;
+  }
+
+  .money-card {
+    width: 32%;
+    border-radius: 12px;
+  }
+
+  .money-card-top {
+    left: 58%;
+    top: 20%;
+  }
+
+  .money-card-send {
+    left: 2%;
+    top: 50%;
+  }
+}
+
+/* Phones*/
+/* Phones*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .money {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 66px 24px 0;
+  }
+
+  .money-text {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .money h2 {
+    margin: 0 0 16px;
+    font-size: 29px;
+    line-height: 33px;
+    letter-spacing: -2px;
+  }
+
+  .money p {
+    width: 100%;
+    font-size: 17px;
+    line-height: 29px;
+    letter-spacing: -0.6px;
+  }
+
+  .money-visual {
+    width: 100%;
+    margin-top: 55px;
+  }
+
+  .money-phone {
+    width: 155%;
+    margin: 0 0 0 5%;
+  }
+
+  .money-card {
+    border-radius: 10px;
+  }
+
+  .money-card-top {
+    width: 30%;
+    left: 62%;
+    top: 20%;
+  }
+
+  .money-card-send {
+    width: 38%;
+    left: 12%;
+    top: 47%;
   }
 }
