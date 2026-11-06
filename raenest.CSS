@@ -2982,8 +2982,8 @@ html:has(.video-modal:target) {
 .latest-arrow::after {
   content: "";
   position: absolute;
-  right: -13px;
-  top: -20px;
+  right: -14.5px;
+  top: -18.5px;
   width: 20px;
   height: 20px;
   background: radial-gradient(
@@ -2998,8 +2998,8 @@ html:has(.video-modal:target) {
 .latest-link::after {
   content: "";
   position: absolute;
-  right: 97px;
-  bottom: 0;
+  right: 95.5px;
+  bottom: -1.5px;
   width: 20px;
   height: 20px;
   background: radial-gradient(
@@ -3279,16 +3279,48 @@ html:has(.video-modal:target) {
 }
 
 @media (min-width: 601px) and (max-width: 1100px) {
+  .news {
+    padding: 60px 40px;
+  }
+
+  .news-heading {
+    font-size: 24px;
+    letter-spacing: -1.2px;
+    margin-bottom: 20px;
+  }
+
   .news-track {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
-    /* width: 70%; */
+    gap: 30px;
+  }
+
+  .news-track img {
+    width: 90px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 1100px) {
+@media (min-width: 320px) and (max-width: 600px) {
+  .news {
+    padding: 60px 24px;
+  }
+
+  .news-heading {
+    font-size: 26px;
+    letter-spacing: -1.2px;
+    margin-bottom: 20px;
+  }
+
+  .news-track {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .news-track img {
+    width: 110px;
+  }
+
+  .news-track img:nth-child(5) {
+    width: 170px;
+  }
 }
 
 /* FOOTER */
@@ -3298,7 +3330,7 @@ html:has(.video-modal:target) {
   background: #080514;
   color: white;
   padding: 90px 4% 300px;
-  
+  overflow: hidden;
 }
 
 /* FOOTER LOGO */
@@ -3313,9 +3345,6 @@ html:has(.video-modal:target) {
   position: absolute;
   left: 0;
 }
-
-
-
 
 .social-links {
   display: flex;
@@ -3343,15 +3372,13 @@ html:has(.video-modal:target) {
   transform: translateY(-3px);
 }
 
-
 .footer-main {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 60px;
-    margin-bottom: 110px;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  margin-bottom: 110px;
+  align-items: start;
 }
-
 
 .footer-address {
   font-size: 16px;
@@ -3461,26 +3488,109 @@ html:has(.video-modal:target) {
   margin: 0;
 }
 
-/* RESPONSIVE */
+/* Tablet */
 @media (min-width: 601px) and (max-width: 1100px) {
+  .footer {
+    padding: 60px 5%;
+  }
+
   .footer-main {
-    grid-template-columns: 1fr;
-    gap: 55px;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .footer-logo {
+    position: static;
+    display: block;
+    width: 200px;
+    margin: 0 0 20px;
+  }
+
+  .footer-address {
+    position: static;
+    font-size: 14px;
+    margin: 0 0 20px;
+  }
+
+  .social-links {
+    position: static;
   }
 
   .footer-columns {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 45px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
   }
 
-  .footer {
-    padding: 60px 5%;
+  .footer-column {
+    gap: 16px;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+  }
+
+  .footer-column a {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .career {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .career span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .footer-bottom p,
+  .footer-policies a {
+    font-size: 14px;
+  }
+
+  .footer-legal p {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
   .footer {
-    padding: 60px 5%;
+    padding: 50px 5%;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .footer-logo {
+    position: static;
+    display: block;
+    width: 160px;
+    margin: 0 0 20px;
+  }
+
+  .footer-address {
+    position: static;
+    font-size: 13px;
+    margin: 0 0 20px;
+  }
+
+  .footer-address br {
+    display: none;
+  }
+
+  .social-links {
+    position: static;
+    gap: 18px;
+  }
+
+  .social-links img {
+    width: 18px;
+    height: 18px;
   }
 
   .footer-columns {
@@ -3488,15 +3598,38 @@ html:has(.video-modal:target) {
     gap: 35px 15px;
   }
 
+  .footer-column {
+    gap: 16px;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+  }
+
   .footer-column a {
-    white-space: normal;
     font-size: 13px;
+    white-space: normal;
+  }
+
+  .career {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .career span {
+    font-size: 11px;
+    padding: 5px 10px;
   }
 
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+  }
+
+  .footer-bottom p,
+  .footer-policies a {
+    font-size: 13px;
   }
 
   .footer-policies {
