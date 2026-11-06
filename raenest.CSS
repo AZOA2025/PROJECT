@@ -3070,7 +3070,9 @@ html:has(.video-modal:target) {
     bottom: 10px;
   }
 
-  .latest-link::after { right: 70px; }
+  .latest-link::after {
+    right: 70px;
+  }
 }
 
 /* Phones */
@@ -3135,5 +3137,377 @@ html:has(.video-modal:target) {
 
   .latest-link::after {
     right: 82px;
+  }
+}
+
+.line {
+  height: 0.5px;
+  background-color: rgb(209, 209, 209);
+  width: 95%;
+  justify-self: center;
+  margin: 10px 0 0;
+}
+
+.placeholder {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.placeholder p {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -1.44px;
+  /* text-align: start; */
+}
+
+.placeholder form {
+  display: flex;
+  gap: 8px;
+}
+
+.placeholder input {
+  width: 30vw;
+  height: 8vh;
+  border-radius: 8px;
+  border: 1px solid #a7a6a5;
+  padding: 10px;
+}
+
+#newsteller {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #4f3fd7;
+  font-weight: 500;
+  font-size: 16px;
+  width: fit-content;
+  height: 8vh;
+  padding: 0 10px 0;
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .placeholder {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: start; */
+  }
+
+  .placeholder p {
+    font-size: 20px;
+    text-align: start;
+    justify-self: start;
+    font-weight: 500;
+  }
+
+  .placeholder input {
+    width: 80vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid #a7a6a5;
+    padding: 5px;
+  }
+
+  #newsteller {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #4f3fd7;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .placeholder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .placeholder p {
+    font-size: 16px;
+    text-align: start;
+    justify-self: start;
+    font-weight: 500;
+  }
+
+  .placeholder input {
+    width: 50vw;
+    height: 5vh;
+    border-radius: 8px;
+    border: 1px solid #a7a6a5;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #newsteller {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #4f3fd7;
+    font-weight: 500;
+    font-size: 10px;
+    width: fit-content;
+    padding: 3px 12px;
+  }
+}
+
+.news {
+  padding: 100px 70px;
+}
+
+.news-heading {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -2.16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.news-track {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-track img {
+  width: 160px;
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .news-track {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    /* width: 70%; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1100px) {
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  overflow: hidden;
+  background: #080514;
+  color: white;
+  padding: 90px 4% 300px;
+  
+}
+
+/* FOOTER LOGO */
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+  width: 225px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
+
+
+
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: translateY(-3px);
+}
+
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    margin-bottom: 110px;
+    align-items: start;
+}
+
+
+.footer-address {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 11%;
+  left: 40px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 17%;
+  left: 40px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  color: #bcb6c9;
+  font-size: 18px;
+  margin: 0 0 2px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.career {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.career span {
+  background: #dfff00;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 12px;
+  border-radius: 30px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #9993a9;
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-policies {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.footer-policies a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #777080;
+  margin-bottom: 60px;
+}
+
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-legal p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (min-width: 601px) and (max-width: 1100px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 45px;
+  }
+
+  .footer {
+    padding: 60px 5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .footer {
+    padding: 60px 5%;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 15px;
+  }
+
+  .footer-column a {
+    white-space: normal;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .footer-policies {
+    gap: 25px;
+  }
+
+  .footer-legal p {
+    font-size: 13px;
+  }
+
+  .footer::before {
+    height: 35%;
   }
 }
