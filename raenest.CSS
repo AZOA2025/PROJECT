@@ -3227,6 +3227,7 @@ html:has(.video-modal:target) {
   }
 }
 
+/* Phones */
 @media (min-width: 320px) and (max-width: 600px) {
   .placeholder {
     display: flex;
@@ -3256,6 +3257,7 @@ html:has(.video-modal:target) {
     background-color: #4f3fd7;
     font-weight: 500;
     font-size: 10px;
+    height: 5vh;
     width: fit-content;
     padding: 3px 12px;
   }
